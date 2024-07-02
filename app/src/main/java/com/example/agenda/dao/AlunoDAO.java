@@ -39,6 +39,8 @@ public class AlunoDAO {
     public void remover(Aluno aluno){
         alunos.removeIf(a-> a == aluno);
     }
-
+    public Aluno buscarAlunoPorId(int id){
+        return alunos.stream().filter(a -> a.getId() == id).findFirst().get();
+    }
 
 }
