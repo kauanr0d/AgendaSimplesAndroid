@@ -96,18 +96,11 @@ public class ListaAlunosActivity extends AppCompatActivity {
         ListView listaAlunos = findViewById(R.id.activity_lista_alunos_listview);
         configuraAdapter(listaAlunos);
         configuraListenerDeCliquePorItem(listaAlunos);
-        // configurarListenerDeCliqueLongoPorItem(listaAlunos);
         registerForContextMenu(listaAlunos);
 
     }
 
-   /* private void configurarListenerDeCliqueLongoPorItem(ListView listaAlunos) {
-        listaAlunos.setOnItemLongClickListener((parent, view, position, id) -> {
-            Aluno aluno = (Aluno) parent.getItemAtPosition(position);
-           // remove(aluno);
-            return false;
-        });
-    }*/
+
 
     private void remove(Aluno aluno) {
         adapter.remove(aluno);

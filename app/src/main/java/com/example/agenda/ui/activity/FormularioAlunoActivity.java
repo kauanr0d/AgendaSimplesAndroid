@@ -77,8 +77,6 @@ public class FormularioAlunoActivity extends AppCompatActivity {
     }
 
     private void finalizaFormulario() {
-        //Aluno aluno = getAluno(edtNome, edtTelefone, edtEmail);
-        // salvarAluno(aluno);
         preencheAluno();
         if (aluno.temIdValido() && (aluno != null)) {
             dao.edita(aluno);
