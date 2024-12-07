@@ -31,8 +31,7 @@ public class FormularioAlunoActivity extends AppCompatActivity {
         String nome = edtNome.getText().toString();
         String telefone = edtTelefone.getText().toString();
         String email = edtEmail.getText().toString();
-        Aluno aluno = new Aluno(nome, telefone, email);
-        return aluno;
+        return new Aluno(nome, telefone, email);
     }
 
     @Override
