@@ -9,6 +9,7 @@ public class Aluno implements Serializable {
     private String telefone;
     private String email;
     private int id;
+    private Long matricula;
 
     public Aluno(String nome, String telefone, String email) {
         this.nome = nome;
