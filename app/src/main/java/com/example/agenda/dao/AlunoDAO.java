@@ -18,16 +18,6 @@ public class AlunoDAO {
     }
 
     public void edita(Aluno aluno) {
-       /* alunos.forEach(a ->
-        {
-            if (a.getId() == aluno.getId()) {
-                a = aluno;
-            }
-        });
-        if (aluno != null) {
-            int posicaoDoAluno = alunos.indexOf(aluno);
-            alunos.set(posicaoDoAluno, aluno);
-        }*/
         Aluno a = alunos.stream().filter(aln -> aln.getId() == aluno.getId()).findFirst().orElse(null);
         int pos = alunos.indexOf(a);
         alunos.set(pos,aluno);
